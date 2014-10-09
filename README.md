@@ -7,5 +7,4 @@ Sample application for heroku-prolog-buildpack. Once cloned, assuming you have t
    * heroku addons:add heroku-postgresql:hobby-dev
    * git push heroku master
 
-This may take a long time the first time you run it, since it must compile SWI-Prolog and all its dependencies. Once built are cached, so subsequent pushes will take only a few seconds.
 Unfortunately compilation time is limited to 15 minutes, and on the free tier you can easily exceed that just building SWI-Prolog. To get around this, popular precompiled versions (including whatever version is the default) will be available inside the buildpack. 
